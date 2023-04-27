@@ -1,4 +1,4 @@
-console.log("hi");
+//console.log("hi");
 
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
@@ -45,5 +45,15 @@ const determineWinner = (userChoice, computerChoice) => {
   }
 };
 
-//determineWinner test
-console.log(determineWinner("scissors", "scissors"));
+/*determineWinner test
+console.log(determineWinner("scissors", "scissors")); */
+
+function playGame() {
+  userChoice = getUserChoice("rock");
+  computerChoice = getComputerChoice();
+  console.log(
+    `You chose ${userChoice}! Your AI overlord chose ${computerChoice}.`
+  );
+}
+
+playGame();
