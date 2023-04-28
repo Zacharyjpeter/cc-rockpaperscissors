@@ -5,7 +5,8 @@ const getUserChoice = (userInput) => {
   if (
     userInput === "rock" ||
     userInput === "paper" ||
-    userInput === "scissors"
+    userInput === "scissors" ||
+    userInput === "bomb"
   ) {
     return userInput;
   } else {
@@ -40,6 +41,8 @@ const determineWinner = (userChoice, computerChoice) => {
     return "You lost!";
   } else if (userChoice === "scissors" && computerChoice === "rock") {
     return "You lost!";
+  } else if (userChoice === "bomb") {
+    return "You obliterated the AI!";
   } else {
     return "You won!";
   }
@@ -49,11 +52,10 @@ const determineWinner = (userChoice, computerChoice) => {
 console.log(determineWinner("scissors", "scissors")); */
 
 function playGame() {
-  userChoice = getUserChoice("rock");
+  userChoice = getUserChoice("bomb");
   computerChoice = getComputerChoice();
-  console.log(
-    `You chose ${userChoice}! Your AI overlord chose ${computerChoice}.`
-  );
+  console.log(`You chose ${userChoice}! The AI chose ${computerChoice}.`);
+  console.log(determineWinner(userChoice, computerChoice));
 }
 
 playGame();
