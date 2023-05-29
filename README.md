@@ -14,4 +14,4 @@ The logic for this project was tricky. Phrasing the if then statements to ensure
 
 Adding HTML/CSS for browser support and true user input would make this more fun. It's not much of a game if you can't play yourself.
 
-Based on [Codecademy's javascript course](https://www.codecademy.com/learn/introduction-to-javascript) beginner Javascript course.
+Based on [Codecademy's javascript course](https://www.codecademy.com/learn/introduction-to-javascript).
