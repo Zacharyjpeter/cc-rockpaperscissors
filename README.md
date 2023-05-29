@@ -1,8 +1,10 @@
 # Rock Paper Scissors
 
-A rock paper scissors simulator.
-
 ![Screenshot of project](https://raw.githubusercontent.com/Zacharyjpeter/cc-rockpaperscissors/main/rps.png)
+
+## Description
+
+A rock paper scissors simulator
 
 ## Challenges
 
